@@ -22,10 +22,10 @@ header {
  margin: 0 auto;
 }
 
-.header-middle > a {
+.header-img {
  float: left;
+ height: 70px;
 }
-
 
 .nav-list {
  float: right;
@@ -43,12 +43,26 @@ header {
  line-height: 70px;
 }
 
-h1 {
+h2 {
+ position: relative;
  font-size: 32px;
  color: #000000;
  padding-top: 90px;
  padding-bottom: 8px;
  text-align: center;
+}
+
+h2:before {
+ content: "";
+ position: absolute;
+ left: 50%;
+ bottom: -15px;
+ display: inline-block;
+ width: 70px;
+ height: 3px;
+ -webkit-transform: translateX(-50%);
+ transform: translateX(-50%);
+ background-color: #EC715F;
 }
 
 #main-visual {
@@ -86,7 +100,8 @@ h1 {
 .summary {
  font-size: 16px;
  color: #000000;
- padding: 30px 0;
+ margin-top: 30px;
+ margin-bottom: 30px;
  text-align: center;
 }
 
@@ -181,7 +196,7 @@ h1 {
 .profile-image, .profile-content {
  float: left;
  width: 512px;
- margin-bottom: 90px;
+ padding-bottom: 90px;
 }
 
 .profile-img {
@@ -233,6 +248,11 @@ h1 {
 
 .contact-mail {
  padding-bottom: 20px;
+ text-align: center;
+}
+
+.contact-tel {
+ text-align: center;
 }
 
 .contact-title {
@@ -242,6 +262,7 @@ h1 {
 
 .contact-icon {
  font-size: 50px;
+ text-align: center;
 }
 
 .contact-icon:nth-child(2) {
@@ -258,3 +279,287 @@ footer {
  text-align: center;
 }
 
+
+/*レスポンシブ対応*/
+@media screen and (max-width:767px) {
+
+ header {
+  width: 100%;
+  height: 50px;
+  background-color: #EC715F;
+ }
+
+ .header-middle {
+  width: 90%;
+ }
+
+ .header-img {
+ height: 50px;
+}
+
+.nav-list > a {
+ display: none;
+}
+
+.menu-box {
+ float: right;
+ width: 40px;
+ height: 40px;
+ margin-right: 5%;
+ border: 1px solid #FAFAFA;
+ margin-top: 5px;
+ margin-bottom: 5px;
+}
+
+.list-bar:first-child {
+ margin-top: 10px;
+}
+
+.list-bar {
+ display: block;
+ width: 25px;
+ height: 2px;
+ margin: 5px auto;
+ background-color: #FAFAFA;
+}
+
+ #main-visual {
+ width: 100%;
+ height: 650px;
+ background-image: url(img/code.png);
+ background-size: cover;
+ background-position: center;
+}
+
+.main-visual-headline {
+ font-size: 40px;
+ color: #FAFAFA;
+ padding-top: 200px;
+ padding-bottom: 10px;
+ text-align: center;
+}
+
+.main-visual-content {
+ font-size: 18px;
+ color: #FAFAFA;
+ text-align: center;
+}
+
+h2 {
+ width: 90%;
+ position: relative;
+ font-size: 32px;
+ color: #000000;
+ padding-top: 90px;
+ padding-bottom: 8px;
+ text-align: center;
+}
+
+h2:before {
+ content: "";
+ position: absolute;
+ left: 50%;
+ bottom: -15px;
+ display: inline-block;
+ width: 70px;
+ height: 3px;
+ -webkit-transform: translateX(-50%);
+ transform: translateX(-50%);
+ background-color: #EC715F;
+}
+
+ .summary {
+  width: 90%;
+  font-size: 16px;
+  color: #000000;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+ }
+
+ .portfolio-section {
+  width: 90%;
+  padding-right: 5%;
+  padding-left: 5%;
+ }
+
+ .portfolio-box {
+ width: 300px;
+ height: 250px;
+ background-size: cover;
+ background-position: center;
+}
+
+ .portfolio-box:nth-child(1) {
+ display: none;
+}
+
+.portfolio-box:nth-child(2) {
+ background-image: url(img/websuku.png);
+ margin-bottom: 10px;
+}
+
+.portfolio-box:nth-child(3) {
+ display: none;
+}
+
+.portfolio-box:nth-child(4) {
+ background-image: url(img/webcamp.png);
+ margin-bottom: 10px;
+}
+
+.portfolio-box:nth-child(5) {
+ display: none;
+}
+
+.portfolio-box:nth-child(6) {
+ background-image: url(img/webcamp-mother.png);
+ margin-bottom: 90px;
+}
+
+#feature {
+ width: 100%;
+ background-color: #FFFFFF;
+}
+
+.feature-section {
+ width: 90%;
+ margin: 0 auto;
+}
+
+.feature-box {
+ width: 90%;
+ margin-right: 0;
+}
+
+.feature-box:nth-child(1), .feature-box:nth-child(2) {
+ margin-bottom: 10px;
+}
+
+.feature-icon {
+ text-align: center;
+ font-size: 60px;
+}
+
+.feature-title {
+ font-size: 20px;
+ color: #000000;
+ text-align: center;
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+
+.feature-body {
+ font-size: 16px;
+ color: #000000;
+}
+
+#profile {
+ width: 100%;
+ background-color: #ECEFF1;
+}
+
+ .profile-section {
+  width: 90%;
+  margin: 0 auto;
+ }
+
+ .profile-image {
+ width: 90%;
+ padding-bottom: 0;
+}
+
+.profile-content {
+ width: 90%;
+ padding-bottom: 90px;
+}
+
+.profile-img {
+ background-image: url("img/my-icon.jpg");
+ width: 250px;
+ height: 250px;
+ border-radius: 50%;
+ background-position: center;
+ margin: 0 auto;
+}
+
+.profile-name {
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
+
+.profile-title {
+ font-size: 20px;
+ color: #000000;
+ padding-bottom: 5px;
+ text-align: center;
+}
+
+.profile-body {
+ font-size: 16px;
+ color: #000000;
+ text-align: center;
+}
+
+#contact {
+ width: 100%;
+}
+
+.contact-section {
+ width: 90%;
+ margin: 0 auto;
+}
+
+.contact-box {
+ width: 90%;
+ margin: 0 auto;
+}
+/*
+.contact-box:nth-child(2) {
+ padding-bottom: 90px;
+}*/
+
+.contact-box-mini {
+ width: 60%;
+}
+
+.contact-mail > a, .contact-tel > a {
+ color: #000000;
+}
+
+.contact-mail, .contact-tel {
+ padding-bottom: 20px;
+ text-align: center;
+}
+
+.contact-title {
+ font-size: 20px;
+ color: #000000;
+ padding-bottom: 5px;
+ text-align: center;
+}
+
+.contact-icon {
+ font-size: 50px;
+ text-align: center;
+ padding-bottom: 90px;
+}
+
+.contact-icon:nth-child(2) {
+ padding-right: 8px;
+ padding-left: 8px;
+}
+
+footer {
+ width: 100%;
+ height: 60px;
+ background-color: #EC715F;
+ font-size: 16px;
+ color: #FAFAFA;
+ line-height: 60px;
+ text-align: center;
+}
+
+
+
+}
