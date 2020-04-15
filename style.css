@@ -4,7 +4,7 @@
  box-sizing: border-box;
 }
 
-.header {
+header {
  width: 100%;
  height: 70px;
  background-color: #EC715F;
@@ -14,13 +14,43 @@
  width: 1024px;
  height: 70px;
  margin: 0 auto;
- background-color: #FFB6C1;
 }
 
-.main-visual {
+.header-middle > a {
+ float: left;
+}
+
+
+.nav-list {
+ float: right;
+ line-height: 70px;
+}
+
+.nav-list > a {
+ display: inline-block;
+ list-style: none;
+ text-decoration: none;
+ font-size: 16px;
+ color: #FAFAFA;
+ padding-right: 30px;
+ padding-left: 30px;
+ line-height: 70px;
+}
+
+h1 {
+ font-size: 32px;
+ color: #000000;
+ padding-top: 90px;
+ padding-bottom: 8px;
+ text-align: center;
+}
+
+#main-visual {
  width: 100%;
  height: 650px;
- background-color: #AAAAAA;
+ background-image: url(img/mv.png);
+ background-size: cover;
+ background-position: center;
 }
 
 .main-visual-headline {
@@ -37,7 +67,7 @@
  text-align: center;
 }
 
-.portfolio {
+#portfolio {
  width: 100%;
  /* 高さはとりあえず大きめに設定 */
  height: 1200px;
@@ -49,14 +79,6 @@
  margin: 0 auto;
 }
 
-.portfolio-headline {
- font-size: 32px;
- color: #000000;
- padding-top: 90px;
- padding-bottom: 8px;
- text-align: center;
-}
-
 .portfolio-content {
  font-size: 16px;
  color: #000000;
@@ -64,7 +86,7 @@
  text-align: center;
 }
 
-.feature {
+#feature {
  width: 100%;
  /* 高さはとりあえず大きめに設定 */
  height: 1200px;
@@ -76,14 +98,6 @@
  margin: 0 auto;
 }
 
-.feature-headline {
- font-size: 32px;
- color: #000000;
- padding-top: 90px;
- padding-bottom: 8px;
- text-align: center;
-}
-
 .feature-content {
  font-size: 16px;
  color: #000000;
@@ -91,7 +105,7 @@
  text-align: center;
 }
 
-.profile {
+#profile {
  width: 100%;
  /* 高さはとりあえず大きめに設定 */
  height: 1200px;
@@ -103,14 +117,6 @@
  margin: 0 auto;
 }
 
-.profile-headline {
- font-size: 32px;
- color: #000000;
- padding-top: 90px;
- padding-bottom: 8px;
- text-align: center;
-}
-
 .profile-content {
  font-size: 16px;
  color: #000000;
@@ -118,7 +124,7 @@
  text-align: center;
 }
 
-.contact {
+#contact {
  width: 100%;
  /* 高さはとりあえず大きめに設定 */
  height: 1200px;
@@ -129,14 +135,6 @@
  margin: 0 auto;
 }
 
-.contact-headline {
- font-size: 32px;
- color: #000000;
- padding-top: 90px;
- padding-bottom: 8px;
- text-align: center;
-}
-
 .contact-content {
  font-size: 16px;
  color: #000000;
@@ -144,9 +142,13 @@
  text-align: center;
 }
 
-.footer {
+footer {
  width: 100%;
  height: 60px;
  background-color: #EC715F;
+ font-size: 16px;
+ color: #FAFAFA;
+ line-height: 60px;
+ text-align: center;
 }
 
